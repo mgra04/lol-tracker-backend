@@ -1,0 +1,25 @@
+# Go
+/bin/
+/vendor/
+/*.exe
+/*.exe~
+/*.dll
+/*.so
+/*.dylib
+*.test
+*.out
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Config & secrets
+.env
+env.yaml
+.env.yaml
