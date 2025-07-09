@@ -66,9 +66,9 @@ func (c *RiotApiClient) GetMatchByID(matchID string, region constants.Region) (*
 	return &match, err
 }
 
-func (c *RiotApiClient) GetMatchTimelineByMatchID(matchID string, region constants.Region) (*MatchTimelineDTO, error) {
+func (c *RiotApiClient) GetMatchTimelineByMatchID(matchID string, region constants.Region) (*TimelineDTO, error) {
 	route := utils.GetRouteForRegion(region)
-	var timeline MatchTimelineDTO
+	var timeline TimelineDTO
 	path := fmt.Sprintf("/lol/match/v5/matches/%s/timeline", matchID)
 	err := c.Get(string(route), path, &timeline)
 	return &timeline, err

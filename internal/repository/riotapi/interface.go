@@ -11,5 +11,5 @@ type API interface {
 	GetPlatformStatus(region constants.Region) (*PlatformDataDTO, error)
 	GetMatchIDsByPUUID(puuid string, region constants.Region, start int, count int) ([]string, error)
 	GetMatchByID(matchID string, region constants.Region) (*MatchDTO, error)
-	GetMatchTimelineByMatchID(matchID string, region constants.Region) (*MatchTimelineDTO, error)
+	GetMatchTimelineByMatchID(matchID string, region constants.Region) (*TimelineDTO, error)
 }

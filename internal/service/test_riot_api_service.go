@@ -27,7 +27,7 @@ type RiotApiProfileRawResponse struct {
 	PlatformStatus *riotapi.PlatformDataDTO `json:"platformStatus"`
 	MatchIds []string `json:"matchIds"`
 	SingleMatch *riotapi.MatchDTO `json:"match"`
-	SingleMatchTimeline *riotapi.MatchTimelineDTO `json:"matchTimeline"`
+	SingleMatchTimeline *riotapi.TimelineDTO `json:"matchTimeline"`
 }
 
 func (s *TestRiotApiService) LookupProfile(gameName, tagLine string, region constants.Region) (*RiotApiProfileRawResponse, error) {
